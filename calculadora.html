@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Online</title>
+    <link rel="stylesheet" href="calculadora.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <script src="calculadora.js"></script>
+</head>
+<body>
+    <h1>Calculadora Online</h1>
+    <div id="calc">
+
+        <p id="resultado">
+            
+        </p>
+
+        <div id="teclas">
+            <div class="coluna">
+                <button class="botao" id="del" onclick="apagar()">
+                    ⌫
+                </button>
+                <button class="botao" onclick="inserir('7')">
+                    7
+                </button>
+                <button class="botao" onclick="inserir('4')">
+                    4
+                </button>
+                <button class="botao" onclick="inserir('1')">
+                    1
+                </button>
+                <button class="botao" onclick="inserir('0')">
+                    0
+                </button>
+            </div>
+            
+            <div class="coluna">
+                <button class="botao" onclick="limpar()">
+                    C
+                </button>
+                <button class="botao" onclick="inserir('8')">
+                    8
+                </button>
+                <button class="botao" onclick="inserir('5')">
+                    5
+                </button>
+                <button class="botao" onclick="inserir('2')">
+                    2
+                </button>
+                <button class="botao" onclick="inserir('.')">
+                    .
+                </button>
+            </div>
+
+            <div class="coluna">
+                <button class="botao" onclick="inserir('(')">
+                    (
+                </button>
+                <button class="botao" onclick="inserir('9')">
+                    9
+                </button>
+                <button class="botao" onclick="inserir('6')">
+                    6
+                </button>
+                <button class="botao" onclick="inserir('3')">
+                    3
+                </button>
+                <button class="botao" onclick="inserir('%')">
+                    %
+                </button>
+            </div>
+
+            <div class="coluna">
+                <button class="botao" onclick="inserir(')')">
+                    )
+                </button>
+                <button class="botao" onclick="inserir('/')">
+                    /
+                </button>
+                <button class="botao" onclick="inserir('*')">
+                    *
+                </button>
+                <button class="botao" onclick="inserir('-')">
+                    -
+                </button>
+                <button class="botao" onclick="inserir('+')">
+                    +
+                </button>
+            </div>
+
+            <div class="coluna">
+                <button class="botao" onclick="inserir('mod')">
+                    mod
+                </button>
+                <button class="botao" onclick="inserir('n!')">
+                    n!
+                </button>
+                <button class="botao" onclick="inserir('√')">
+                    √
+                </button>
+                <button class="botao" onclick="inserir('x²')">
+                    x²
+                </button>
+                <button class="botao" id="igual" onclick="calcular()">
+                    =
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
