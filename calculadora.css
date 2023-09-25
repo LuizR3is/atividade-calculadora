@@ -13,21 +13,33 @@ body{
     background-color: gainsboro;
 }
 
-#calc{
+main{
+    display: flex;
+    flex-direction: line;
+    justify-content: center;
+    width: 616px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#calc, #historico{
     background-color: gainsboro;
     border-radius: 14px;
     width: 300px;
+    height: 333px;
     margin-left: auto;
     margin-right: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
     box-shadow: 5px 5px 15px black;
 }
 
-#historico{
-    font-size: small;
-}
+#historico p{
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    font-size: large;
+} 
 
 #resultado{
     background-color: black;
@@ -86,3 +98,28 @@ body{
 #igual:hover{
     background-color: darkgreen;
 }
+
+#historico-conteudo{
+    text-align: center;
+    padding: 4px;
+}
+
+#historico-texto {
+    height: 220px;
+    padding: 4px;
+    text-align: right;
+  }
+
+  #limpar-historico{
+    margin: 2px
+  }
+
+footer{
+    text-align: center;
+    font-style: italic;
+    color: black;
+    font-size: small;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
